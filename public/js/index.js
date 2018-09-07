@@ -393,7 +393,8 @@ loadProjects();
                     var {tag}=t
                     html2+=`<a href="search.html?tag=${tag}">${tag}</a>`;
                 }
-                var {author,click,content,md,nid,tid,title,updateTime}=top;
+                var {author,click,content,md,nid,tid,title,updateTime}=top[0];
+                console.log(top[0]);
                 var html=`<div class="img-bg"><a href="news_detail.html?nid=${nid}&tid=${tid}"><img src="${md}" alt="${title}"></a></div>
                 <div class="info-text">
                     <h2><a href="news_detail.html?nid=${nid}&tid=${tid}">${title}</a></h2>

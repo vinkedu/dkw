@@ -4,6 +4,7 @@ var productlist=require("./router/productlist");
 var videolist=require("./router/videolist");
 var projectslist=require("./router/projectslist");
 var newslist=require("./router/newslist");
+var test=require("./router/test");
 //加载跨域模块
 var cors=require('cors');
 //配置跨域模块；允许那个地址跨域访问
@@ -19,3 +20,4 @@ app.use("/productlist",productlist);
 app.use("/videolist",videolist);
 app.use("/projectslist",projectslist);
 app.use("/newslist",newslist);
+app.use("/test",test);

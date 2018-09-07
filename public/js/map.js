@@ -37,7 +37,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"我的标记",content:"我的备注",point:"121.409072|31.139509",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"我的位置",content:"欢迎来找我",point:"121.409072|31.139509",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
     ];
     //创建marker
     function addMarker(){
