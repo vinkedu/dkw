@@ -37,7 +37,7 @@
     }
     
     //标注点数组
-    var markerArr = [{title:"我的位置",content:"欢迎来找我",point:"121.409072|31.139509",isOpen:0,icon:{w:21,h:21,l:0,t:0,x:6,lb:5}}
+    var markerArr = [{title:"我的位置",content:"欢迎来找我",point:"121.409072|31.139509",isOpen:0,icon:{w:40,h:80,l:50,t:50,x:6,lb:5}}
     ];
     //创建marker
     function addMarker(){
@@ -89,7 +89,7 @@
     }
     //创建一个Icon
     function createIcon(json){
-        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        var icon = new BMap.Icon("image/map.gif", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
         return icon;
     }
     
