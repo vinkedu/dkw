@@ -1,7 +1,7 @@
 {
   "name": "dkw-master",
   "version": "1.1.1",
-  "description": "响应式门户网站",
+  "description": "酷炫特效门户网站",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
