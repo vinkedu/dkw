@@ -18,9 +18,9 @@ CREATE TABLE type(
     tid INT PRIMARY KEY AUTO_INCREMENT,
     name VARCHAR(255)
 ); 
-INSERT INTO type VALUES(null,"APP\u5f00\u53d1");
-INSERT INTO type VALUES(null,"\u7f51\u7ad9\u5efa\u8bbe");
-INSERT INTO type VALUES(null,"\u5e73\u9762\u8bbe\u8ba1");
+INSERT INTO type VALUES(null,"APP开发");
+INSERT INTO type VALUES(null,"网站建设");
+INSERT INTO type VALUES(null,"平面设计");
 
 #产品表
 CREATE TABLE product(
@@ -112,5 +112,39 @@ INSERT INTO news VALUES(null,3,"如何成为一个优秀的工程师","杜凯文
 INSERT INTO news VALUES(null,3,"15个必备VSCode插件","杜凯文","image\/news\/13_news_sm.jpg");
 INSERT INTO news VALUES(null,3,"支付宝的优秀服务器","杜凯文","image\/news\/14_news_sm.jpg");
 INSERT INTO news VALUES(null,3,"最新的ECMAScript8","杜凯文","image\/news\/15_news_sm.jpg");
+
+#顶部表
+CREATE TABLE top(
+    tid INT PRIMARY KEY AUTO_INCREMENT,
+    nid INT,
+    title VARCHAR(255),
+    author VARCHAR(255), 
+    updateTime VARCHAR(255),
+    click INT,    
+    isTop INT,
+    content VARCHAR(255), 
+    md VARCHAR(255)
+);
+INSERT  INTO top  VALUES(null,2,"如何成为一名优秀的工程师","dkw","杜凯文",20,1,"","image\/news\/02_news_md.jpg");
+INSERT  INTO top  VALUES(null,11,"是时候改变你对微服务的认识了","dkw","杜凯文",20,1,"","image\/news\/11_news_md.jpg");
+INSERT  INTO top  VALUES(null,16,"15个必备VScode插件","dkw","杜凯文",20,1,"","image\/news\/11_news_md.jpg");
+
+#标签表
+CREATE TABLE tag(
+    tid INT PRIMARY KEY AUTO_INCREMENT,
+    nid INT,
+    tag VARCHAR(255)
+);
+INSERT  INTO tag  VALUES(null,2,"坚持不懈的态度");
+INSERT  INTO tag  VALUES(null,2,"良好的心态");
+INSERT  INTO tag  VALUES(null,2,"终生学习");
+INSERT  INTO tag  VALUES(null,11,"异步机制");
+INSERT  INTO tag  VALUES(null,11,"微服务");
+INSERT  INTO tag  VALUES(null,11,"请求和响应");
+INSERT  INTO tag  VALUES(null,16,"mysql");
+INSERT  INTO tag  VALUES(null,16,"vetur");
+INSERT  INTO tag  VALUES(null,16,"open in window");
+
+
 
 
