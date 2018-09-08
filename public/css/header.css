@@ -25,6 +25,7 @@
 
 #logo img {
     width: 186px;
+    margin-top: -6px;
 }
 
 .top-nav {
@@ -35,9 +36,8 @@
     float: left;
 }
 .top-nav a{
-    text-decoration: none!important;
     padding:5px 25px;
-    line-height: 50px;
+    line-height: 80px;
     border-radius:99px;
     transition: color .3s,background-color .8s ;
 }

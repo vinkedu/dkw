@@ -222,7 +222,7 @@ document.documentElement.style.overflow="hidden";//禁止页面滚动
                 for (var p of product) {
                     var {hpic, pid, tid, title} = p;
                     html += `<li>
-                        <a href="product_details.html?pid=${pid}&tid=${tid}">
+                        <a href="#">
                             <span><img src="${hpic}" alt="${title}"></span>
                             <span>${title}</span>
                             <span>+</span>
@@ -335,11 +335,11 @@ function loadProjects(){
             for(var i=0;i<l;i++){
                 var {cid,title,md}=data[i];
                 if(i<c(l)){
-                    html1+=`<li><a href="case_details.html?cid=${cid}">
+                    html1+=`<li><a href="#">
                     <img src="${md}" alt="${title}"><span class="txt">${title}</span><span
                         class="fa fa-search"></span></a></li>`
                 }else{
-                    html2+=`<li><a href="case_details.html?cid=${cid}">
+                    html2+=`<li><a href="#">
                     <img src="${md}" alt="${title}"><span class="txt">${title}</span><span
                         class="fa fa-search"></span></a></li>`
                 }
@@ -383,7 +383,7 @@ loadProjects();
                     var {nid,tid,title,sm,updateTime}=o;
                     html+=`<li>
                             <img src="${sm}" alt="${title}">
-                            <a href="news_details.html?nid=${nid}&tid=${tid}">${title}</a>
+                            <a href="#">${title}</a>
                             <p>${updateTime}</p>
                         </li>`
                 }
@@ -391,11 +391,11 @@ loadProjects();
                 var html2=`<span>标签:</span>`;
                 for(var t of tag){
                     var {tag}=t
-                    html2+=`<a href="search.html?tag=${tag}">${tag}</a>`;
+                    html2+=`<a href="#">${tag}</a>`;
                 }
                 var {author,click,content,md,nid,tid,title,updateTime}=top[0];
                 console.log(top[0]);
-                var html=`<div class="img-bg"><a href="news_detail.html?nid=${nid}&tid=${tid}"><img src="${md}" alt="${title}"></a></div>
+                var html=`<div class="img-bg"><a href="#"><img src="${md}" alt="${title}"></a></div>
                 <div class="info-text">
                     <h2><a href="news_detail.html?nid=${nid}&tid=${tid}">${title}</a></h2>
                     <ul>
